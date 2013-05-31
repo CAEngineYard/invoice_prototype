@@ -1,0 +1,10 @@
+o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1368105566.694408:@value"­[I" 
+
+$(function() {
+    $("#invoices th a, #invoices .pagination a").live("click", function() {
+        $.getScript(this.href);
+        return false;
+    });
+
+});
+:EF

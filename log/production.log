@@ -1,0 +1,320 @@
+Connecting to database specified by database.yml
+Started GET "/invoice/" for 127.0.0.1 at 2013-05-09 09:19:26 -0400
+Processing by InvoiceController#index as HTML
+  Rendered invoice/index.html.erb within layouts/application (5.9ms)
+Compiled cb_invoices.css  (3ms)  (pid 10533)
+Compiled invoice.css  (3ms)  (pid 10533)
+Compiled pdf.css  (2ms)  (pid 10533)
+Compiled sam.css  (3ms)  (pid 10533)
+Compiled saml.css  (3ms)  (pid 10533)
+Compiled scaffolds.css  (63ms)  (pid 10533)
+Compiled application.css  (385ms)  (pid 10533)
+Compiled application.js  (0ms)  (pid 10533)
+Completed 200 OK in 453ms (Views: 451.6ms | ActiveRecord: 0.0ms)
+Started GET "/assets/application-d579c81fc78af379feaaeb730d00e271.js" for 127.0.0.1 at 2013-05-09 09:19:26 -0400
+Served asset /application-d579c81fc78af379feaaeb730d00e271.js - 200 OK (0ms)
+Started GET "/assets/application-084b523c92a3aac67cecb6d7f9c91caa.css" for 127.0.0.1 at 2013-05-09 09:19:26 -0400
+Served asset /application-084b523c92a3aac67cecb6d7f9c91caa.css - 200 OK (0ms)
+Started GET "/assets/cb-21646743d8d5dacc4a10b8d940e0018c.png" for 127.0.0.1 at 2013-05-09 09:19:26 -0400
+Served asset /cb-21646743d8d5dacc4a10b8d940e0018c.png - 200 OK (0ms)
+Started POST "/invoice/get_invoices_by_accountdid" for 127.0.0.1 at 2013-05-09 09:19:29 -0400
+Processing by InvoiceController#get_invoices_by_accountdid as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"tCqlNcGIg9OSyP9FkSDtyUZtxfyq1u0mtAnnEfmTiiw=", "account_did"=>"A0001372H8F0XS6CXZF", "status"=>"All", "commit"=>"Continue"}
+Completed 500 Internal Server Error in 70708ms
+
+JSON::ParserError (743: unexpected token at '{{"data":null}}'):
+  app/controllers/invoice_controller.rb:35:in `get_invoices_by_accountdid'
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2013-05-09 13:32:19 -0400
+Served asset /rails.png - 200 OK (5ms)
+Connecting to database specified by database.yml
+Started GET "/invoice/" for 127.0.0.1 at 2013-05-17 13:16:10 -0400
+Processing by InvoiceController#index as HTML
+  Rendered invoice/index.html.erb within layouts/application (2.7ms)
+Compiled cb_invoices.css  (1ms)  (pid 6733)
+Compiled invoice.css  (1ms)  (pid 6733)
+Compiled pdf.css  (0ms)  (pid 6733)
+Compiled sam.css  (1ms)  (pid 6733)
+Compiled saml.css  (0ms)  (pid 6733)
+Compiled scaffolds.css  (4ms)  (pid 6733)
+Compiled application.css  (196ms)  (pid 6733)
+Compiled application.js  (0ms)  (pid 6733)
+Completed 200 OK in 247ms (Views: 246.8ms | ActiveRecord: 0.0ms)
+Started GET "/" for 127.0.0.1 at 2013-05-17 13:16:12 -0400
+Processing by InvoiceController#index as HTML
+  Rendered invoice/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.0ms)
+Connecting to database specified by database.yml
+Started GET "/assets/rails.png" for 127.0.0.1 at 2013-05-17 13:16:37 -0400
+Served asset /rails.png - 200 OK (5ms)
+Started GET "/" for 127.0.0.1 at 2013-05-17 13:17:07 -0400
+Processing by InvoiceController#index as HTML
+Redirected to http://localhost:3000/saml
+Completed 302 Found in 15340ms (ActiveRecord: 0.0ms)
+Started GET "/saml" for 127.0.0.1 at 2013-05-17 13:17:22 -0400
+Processing by SamlController#index as HTML
+Redirected to https://cbtest.okta.com/app/template_saml_2_0/k4aberjrODWHGWIYFSXI/sso/saml
+Completed 302 Found in 4613ms (ActiveRecord: 0.0ms)
+Connecting to database specified by database.yml
+Started GET "/invoice/" for 127.0.0.1 at 2013-05-20 09:31:10 -0400
+Processing by InvoiceController#index as HTML
+Completed 500 Internal Server Error in 49469ms
+
+ActiveRecord::StatementInvalid (Could not find table 'accounts'):
+  app/controllers/invoice_controller.rb:11:in `new'
+  app/controllers/invoice_controller.rb:11:in `index'
+
+
+Started GET "/" for 127.0.0.1 at 2013-05-20 09:36:19 -0400
+Processing by InvoiceController#index as HTML
+Completed 500 Internal Server Error in 51280ms
+
+ActiveRecord::StatementInvalid (Could not find table 'accounts'):
+  app/controllers/invoice_controller.rb:11:in `new'
+  app/controllers/invoice_controller.rb:11:in `index'
+
+
+Connecting to database specified by database.yml
+Started GET "/" for 127.0.0.1 at 2013-05-20 09:40:34 -0400
+Processing by InvoiceController#index as HTML
+Redirected to http://localhost:3000/saml
+Completed 302 Found in 40910ms (ActiveRecord: 1.8ms)
+Started GET "/saml" for 127.0.0.1 at 2013-05-20 09:41:15 -0400
+Connecting to database specified by database.yml
+Started GET "/" for 127.0.0.1 at 2013-05-20 09:52:26 -0400
+Processing by InvoiceController#index as HTML
+Completed 500 Internal Server Error in 5416690ms
+
+NoMethodError (undefined method `assertion_consumer_service_url=' for Account(Table doesn't exist):Class):
+  app/controllers/invoice_controller.rb:10:in `index'
+
+
+Connecting to database specified by database.yml
+Started GET "/invoice/" for 127.0.0.1 at 2013-05-20 11:50:23 -0400
+Processing by InvoiceController#index as HTML
+  Rendered invoice/index.html.erb within layouts/application (8.2ms)
+Compiled cb_invoices.css  (3ms)  (pid 8969)
+Compiled invoice.css  (3ms)  (pid 8969)
+Compiled pdf.css  (3ms)  (pid 8969)
+Compiled sam.css  (3ms)  (pid 8969)
+Compiled saml.css  (2ms)  (pid 8969)
+Compiled scaffolds.css  (26ms)  (pid 8969)
+Compiled application.css  (322ms)  (pid 8969)
+Compiled application.js  (0ms)  (pid 8969)
+Completed 200 OK in 9365ms (Views: 382.2ms | ActiveRecord: 2.1ms)
+Connecting to database specified by database.yml
+Started GET "/" for 127.0.0.1 at 2013-05-20 14:23:25 -0400
+
+RuntimeError (ActionController::Metal#session delegated to @_request.session, but @_request is nil: #<InvoiceController:0x007fcad5e21470 @web_svc_url="https://cafinexws.careerbuilder.com/CAFinancialExternalWS">):
+  app/controllers/application_controller.rb:29:in `initialize'
+
+
+Connecting to database specified by database.yml
+Started GET "/" for 127.0.0.1 at 2013-05-20 14:24:22 -0400
+
+RuntimeError (ActionController::Metal#session delegated to @_request.session, but @_request is nil: #<InvoiceController:0x007fdc6c29d268 @web_svc_url="https://cafinexws.careerbuilder.com/CAFinancialExternalWS">):
+  app/controllers/application_controller.rb:29:in `initialize'
+
+
+Started GET "/invoice/" for 127.0.0.1 at 2013-05-20 14:25:07 -0400
+
+RuntimeError (ActionController::Metal#session delegated to @_request.session, but @_request is nil: #<InvoiceController:0x007fdc68c7b1f8 @web_svc_url="https://cafinexws.careerbuilder.com/CAFinancialExternalWS">):
+  app/controllers/application_controller.rb:29:in `initialize'
+
+
+Started GET "/" for 127.0.0.1 at 2013-05-20 14:25:10 -0400
+
+RuntimeError (ActionController::Metal#session delegated to @_request.session, but @_request is nil: #<InvoiceController:0x007fdc68e273f8 @web_svc_url="https://cafinexws.careerbuilder.com/CAFinancialExternalWS">):
+  app/controllers/application_controller.rb:29:in `initialize'
+
+
+Connecting to database specified by database.yml
+Started GET "/" for 127.0.0.1 at 2013-05-20 14:26:15 -0400
+
+RuntimeError (ActionController::Metal#session delegated to @_request.session, but @_request is nil: #<InvoiceController:0x007fbb46810a98 @web_svc_url="https://cafinexws.careerbuilder.com/CAFinancialExternalWS">):
+  app/controllers/application_controller.rb:29:in `initialize'
+
+
+Started GET "/" for 127.0.0.1 at 2013-05-20 14:28:57 -0400
+
+RuntimeError (ActionController::Metal#session delegated to @_request.session, but @_request is nil: #<InvoiceController:0x007fbb489ddb58 @web_svc_url="https://cafinexws.careerbuilder.com/CAFinancialExternalWS">):
+  app/controllers/application_controller.rb:29:in `initialize'
+
+
+Connecting to database specified by database.yml
+Started GET "/" for 127.0.0.1 at 2013-05-20 14:31:00 -0400
+
+RuntimeError (ActionController::Metal#session delegated to @_request.session, but @_request is nil: #<InvoiceController:0x007fa0ec113a70 @web_svc_url="https://cafinexws.careerbuilder.com/CAFinancialExternalWS">):
+  app/controllers/application_controller.rb:29:in `initialize'
+
+
+Connecting to database specified by database.yml
+Started GET "/" for 127.0.0.1 at 2013-05-20 14:34:45 -0400
+
+RuntimeError (ActionController::Metal#session delegated to @_request.session, but @_request is nil: #<InvoiceController:0x007f9ab43279a8 @web_svc_url="https://cafinexws.careerbuilder.com/CAFinancialExternalWS">):
+  app/controllers/application_controller.rb:34:in `initialize'
+
+
+Started GET "/" for 127.0.0.1 at 2013-05-20 14:38:49 -0400
+
+RuntimeError (ActionController::Metal#session delegated to @_request.session, but @_request is nil: #<InvoiceController:0x007f9ab51f3ba8 @web_svc_url="https://cafinexws.careerbuilder.com/CAFinancialExternalWS">):
+  app/controllers/application_controller.rb:34:in `initialize'
+
+
+Connecting to database specified by database.yml
+Started GET "/" for 127.0.0.1 at 2013-05-20 14:48:21 -0400
+Processing by InvoiceController#index as HTML
+Completed 500 Internal Server Error in 91817ms
+
+NameError (undefined local variable or method `session' for Account(Table doesn't exist):Class):
+  app/models/account.rb:9:in `get_saml_settings'
+  app/controllers/invoice_controller.rb:15:in `index'
+
+
+Connecting to database specified by database.yml
+Started GET "/" for 127.0.0.1 at 2013-05-20 14:52:07 -0400
+Processing by InvoiceController#index as HTML
+Redirected to http://localhost:3000/saml
+Completed 302 Found in 22285ms (ActiveRecord: 2.3ms)
+Started GET "/saml" for 127.0.0.1 at 2013-05-20 14:52:29 -0400
+Processing by SamlController#index as HTML
+Redirected to 
+Completed 500 Internal Server Error in 4378ms
+
+ActionController::ActionControllerError (Cannot redirect to nil!):
+  app/controllers/saml_controller.rb:8:in `index'
+
+
+Started GET "/" for 127.0.0.1 at 2013-05-20 14:53:06 -0400
+Processing by InvoiceController#index as HTML
+Redirected to http://localhost:3000/saml
+Completed 302 Found in 25908ms (ActiveRecord: 0.0ms)
+Started GET "/saml" for 127.0.0.1 at 2013-05-20 14:53:52 -0400
+Processing by SamlController#index as HTML
+Redirected to 
+Completed 500 Internal Server Error in 461835ms
+
+ActionController::ActionControllerError (Cannot redirect to nil!):
+  app/controllers/saml_controller.rb:8:in `index'
+
+
+Connecting to database specified by database.yml
+Started GET "/" for 127.0.0.1 at 2013-05-20 15:02:37 -0400
+Processing by InvoiceController#index as HTML
+Redirected to http://localhost:3000/saml
+Completed 302 Found in 24075ms (ActiveRecord: 2.2ms)
+Started GET "/saml" for 127.0.0.1 at 2013-05-20 15:03:01 -0400
+Processing by SamlController#index as HTML
+Redirected to https://cbtest.okta.com/app/template_saml_2_0/k4aberjrODWHGWIYFSXI/sso/saml
+Completed 302 Found in 16341ms (ActiveRecord: 0.0ms)
+Connecting to database specified by database.yml
+Started GET "/" for 127.0.0.1 at 2013-05-20 15:25:55 -0400
+Processing by InvoiceController#index as HTML
+Redirected to http://localhost:3000/saml
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+Started GET "/saml" for 127.0.0.1 at 2013-05-20 15:25:55 -0400
+Processing by SamlController#index as HTML
+Redirected to https://cbtest.okta.com/app/template_saml_2_0/k4aberjrODWHGWIYFSXI/sso/saml
+Completed 302 Found in 5ms (ActiveRecord: 0.0ms)
+Connecting to database specified by database.yml
+Started GET "/" for 127.0.0.1 at 2013-05-23 07:44:51 -0400
+Processing by InvoiceController#index as HTML
+Redirected to http://localhost:3000/saml
+Completed 302 Found in 22106ms (ActiveRecord: 2.8ms)
+Started GET "/saml" for 127.0.0.1 at 2013-05-23 07:45:13 -0400
+Processing by SamlController#index as HTML
+Redirected to https://cbtest.okta.com/app/template_saml_2_0/k4aberjrODWHGWIYFSXI/sso/saml
+Completed 302 Found in 20590ms (ActiveRecord: 0.0ms)
+Connecting to database specified by database.yml
+Started GET "/" for 127.0.0.1 at 2013-05-23 07:47:23 -0400
+Processing by InvoiceController#index as HTML
+Redirected to http://localhost:3000/saml
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+Started GET "/saml" for 127.0.0.1 at 2013-05-23 07:47:23 -0400
+Processing by SamlController#index as HTML
+Redirected to https://cbtest.okta.com/app/template_saml_2_0/k4aberjrODWHGWIYFSXI/sso/saml
+Completed 302 Found in 7ms (ActiveRecord: 0.0ms)
+Connecting to database specified by database.yml
+Started GET "/" for 127.0.0.1 at 2013-05-23 07:52:11 -0400
+Processing by InvoiceController#index as HTML
+Redirected to http://localhost:3000/saml
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+Started GET "/saml" for 127.0.0.1 at 2013-05-23 07:52:11 -0400
+Processing by SamlController#index as HTML
+Redirected to https://cbtest.okta.com/app/template_saml_2_0/k4aberjrODWHGWIYFSXI/sso/saml
+Completed 302 Found in 7ms (ActiveRecord: 0.0ms)
+Started POST "/saml/consume" for 127.0.0.1 at 2013-05-23 07:52:29 -0400
+Processing by SamlController#consume as HTML
+  Parameters: {"SAMLResponse"=>"PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz48c2FtbDJwOlJlc3BvbnNlIHhtbG5zOnNhbWwycD0idXJuOm9hc2lzOm5hbWVzOnRjOlNBTUw6Mi4wOnByb3RvY29sIiBEZXN0aW5hdGlvbj0iaHR0cDovL2xvY2FsaG9zdDozMDAwL3NhbWwvY29uc3VtZSIgSUQ9ImlkMTc4Njc4Mzk4MjI4NjU1NjE4NjY0OTUwNDIiIElzc3VlSW5zdGFudD0iMjAxMy0wNS0yM1QxMTo1MjoyMS45MjlaIiBWZXJzaW9uPSIyLjAiPjxzYW1sMjpJc3N1ZXIgeG1sbnM6c2FtbDI9InVybjpvYXNpczpuYW1lczp0YzpTQU1MOjIuMDphc3NlcnRpb24iIEZvcm1hdD0idXJuOm9hc2lzOm5hbWVzOnRjOlNBTUw6Mi4wOm5hbWVpZC1mb3JtYXQ6ZW50aXR5Ij5odHRwOi8vd3d3Lm9rdGEuY29tL2s0YWJlcmpyT0RXSEdXSVlGU1hJPC9zYW1sMjpJc3N1ZXI+PGRzOlNpZ25hdHVyZSB4bWxuczpkcz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC8wOS94bWxkc2lnIyI+PGRzOlNpZ25lZEluZm8+PGRzOkNhbm9uaWNhbGl6YXRpb25NZXRob2QgQWxnb3JpdGhtPSJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzEwL3htbC1leGMtYzE0biMiLz48ZHM6U2lnbmF0dXJlTWV0aG9kIEFsZ29yaXRobT0iaHR0cDovL3d3dy53My5vcmcvMjAwMC8wOS94bWxkc2lnI3JzYS1zaGExIi8+PGRzOlJlZmVyZW5jZSBVUkk9IiNpZDE3ODY3ODM5ODIyODY1NTYxODY2NDk1MDQyIj48ZHM6VHJhbnNmb3Jtcz48ZHM6VHJhbnNmb3JtIEFsZ29yaXRobT0iaHR0cDovL3d3dy53My5vcmcvMjAwMC8wOS94bWxkc2lnI2VudmVsb3BlZC1zaWduYXR1cmUiLz48ZHM6VHJhbnNmb3JtIEFsZ29yaXRobT0iaHR0cDovL3d3dy53My5vcmcvMjAwMS8xMC94bWwtZXhjLWMxNG4jIi8+PC9kczpUcmFuc2Zvcm1zPjxkczpEaWdlc3RNZXRob2QgQWxnb3JpdGhtPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwLzA5L3htbGRzaWcjc2hhMSIvPjxkczpEaWdlc3RWYWx1ZT55OUNaU3N6WGl5VTlXNy9SdFpiYkl2V3dNb3c9PC9kczpEaWdlc3RWYWx1ZT48L2RzOlJlZmVyZW5jZT48L2RzOlNpZ25lZEluZm8+PGRzOlNpZ25hdHVyZVZhbHVlPmUrM3gyQ2NaaEU0YllydHBOaUtxQWlzQnBXQXpsSUpFREJVODdnelRiS2pTaithM29FcnZWK3lqQXloUEd0YUtTOTFEYTFuVWNITHhpVjNPeEpXZ0o1UkY3OUVrbENVS2Y5RHhGbXRXa05ueTNvTEJwcGxML3F5VVgrRWd5NXFsODhOZWh2VnBlbEZIamI5RGF0dWp3TFdFS0RvblFtN1hISm5JK1F3bXRlaz08L2RzOlNpZ25hdHVyZVZhbHVlPjxkczpLZXlJbmZvPjxkczpYNTA5RGF0YT48ZHM6WDUwOUNlcnRpZmljYXRlPk1JSUNqekNDQWZpZ0F3SUJBZ0lHQVQyMmI5NGdNQTBHQ1NxR1NJYjNEUUVCQlFVQU1JR0tNUXN3Q1FZRFZRUUdFd0pWVXpFVE1CRUcKQTFVRUNBd0tRMkZzYVdadmNtNXBZVEVXTUJRR0ExVUVCd3dOVTJGdUlFWnlZVzVqYVhOamJ6RU5NQXNHQTFVRUNnd0VUMnQwWVRFVQpNQklHQTFVRUN3d0xVMU5QVUhKdmRtbGtaWEl4Q3pBSkJnTlZCQU1NQW1OaU1Sd3dHZ1lKS29aSWh2Y05BUWtCRmcxcGJtWnZRRzlyCmRHRXVZMjl0TUI0WERURXpNRE15T1RFek5UVTFOMW9YRFRRek1ETXlPVEV6TlRZMU4xb3dnWW94Q3pBSkJnTlZCQVlUQWxWVE1STXcKRVFZRFZRUUlEQXBEWVd4cFptOXlibWxoTVJZd0ZBWURWUVFIREExVFlXNGdSbkpoYm1OcGMyTnZNUTB3Q3dZRFZRUUtEQVJQYTNSaApNUlF3RWdZRFZRUUxEQXRUVTA5UWNtOTJhV1JsY2pFTE1Ba0dBMVVFQXd3Q1kySXhIREFhQmdrcWhraUc5dzBCQ1FFV0RXbHVabTlBCmIydDBZUzVqYjIwd2daOHdEUVlKS29aSWh2Y05BUUVCQlFBRGdZMEFNSUdKQW9HQkFJR3B6by91Nks4K3ZkdzFNMCtMa0RRcnJ4VFkKb2ovRlNKOHcwLzNaNDdzTXNRVlVENXVQa2pzbEJNWUkzMHFFV2xYb3pXT3E5YnRDNS9id0ZrcHllOW5adXJvOTFuWlh6UHRFY2xDWQpVMnhYVlBsaU5PSmVMaDc3R0F5d2EvVFJBaFNvTGNiRUNGQmVzWGEzeG9wQVFUOUp6SVNQQWg2UGVLL3o2dkh3QWN6cEFnTUJBQUV3CkRRWUpLb1pJaHZjTkFRRUZCUUFEZ1lFQWdTdDJ5dVM5bEpuSVRBamhoNXF2NzkxZFpvSmZ2VEFkWlI0UDJjbTdxenZOcEY4NkpXR1QKY1hyODVCdTFuYXN3QUVrNU5WYTRHb0dPNmMycU5RUE1UZzMxQ0dxMzdkdmlDYmdkdWkxa1VpTUh3Mm5qTzZ4cDhFM3NORkNqZGZOWQowTHdKU05FNjFxbmVYaWNkYjFzQWZxd0h1WExyMVdqUk9ndVd2R3J0aGJvPTwvZHM6WDUwOUNlcnRpZmljYXRlPjwvZHM6WDUwOURhdGE+PC9kczpLZXlJbmZvPjwvZHM6U2lnbmF0dXJlPjxzYW1sMnA6U3RhdHVzIHhtbG5zOnNhbWwycD0idXJuOm9hc2lzOm5hbWVzOnRjOlNBTUw6Mi4wOnByb3RvY29sIj48c2FtbDJwOlN0YXR1c0NvZGUgVmFsdWU9InVybjpvYXNpczpuYW1lczp0YzpTQU1MOjIuMDpzdGF0dXM6U3VjY2VzcyIvPjwvc2FtbDJwOlN0YXR1cz48c2FtbDI6QXNzZXJ0aW9uIHhtbG5zOnNhbWwyPSJ1cm46b2FzaXM6bmFtZXM6dGM6U0FNTDoyLjA6YXNzZXJ0aW9uIiBJRD0iaWQxNzg2NzgzOTgyMzcyMjY3OTM2NDYxOTkyIiBJc3N1ZUluc3RhbnQ9IjIwMTMtMDUtMjNUMTE6NTI6MjEuOTI5WiIgVmVyc2lvbj0iMi4wIj48c2FtbDI6SXNzdWVyIEZvcm1hdD0idXJuOm9hc2lzOm5hbWVzOnRjOlNBTUw6Mi4wOm5hbWVpZC1mb3JtYXQ6ZW50aXR5Ij5odHRwOi8vd3d3Lm9rdGEuY29tL2s0YWJlcmpyT0RXSEdXSVlGU1hJPC9zYW1sMjpJc3N1ZXI+PHNhbWwyOlN1YmplY3Q+PHNhbWwyOk5hbWVJRCBGb3JtYXQ9InVybjpvYXNpczpuYW1lczp0YzpTQU1MOjEuMTpuYW1laWQtZm9ybWF0OmVtYWlsQWRkcmVzcyI+cnN1YnJhbWFuaWFuQGNiLmNhcmVlcmJ1aWxkZXIuY29tPC9zYW1sMjpOYW1lSUQ+PHNhbWwyOlN1YmplY3RDb25maXJtYXRpb24gTWV0aG9kPSJ1cm46b2FzaXM6bmFtZXM6dGM6U0FNTDoyLjA6Y206YmVhcmVyIj48c2FtbDI6U3ViamVjdENvbmZpcm1hdGlvbkRhdGEgTm90T25PckFmdGVyPSIyMDEzLTA1LTIzVDExOjU3OjIxLjkyOVoiIFJlY2lwaWVudD0iaHR0cDovL2xvY2FsaG9zdDozMDAwL3NhbWwvY29uc3VtZS9pbnZvaWNlIi8+PC9zYW1sMjpTdWJqZWN0Q29uZmlybWF0aW9uPjwvc2FtbDI6U3ViamVjdD48c2FtbDI6Q29uZGl0aW9ucyBOb3RCZWZvcmU9IjIwMTMtMDUtMjNUMTE6NDc6MjEuOTI5WiIgTm90T25PckFmdGVyPSIyMDEzLTA1LTIzVDExOjU3OjIxLjkyOVoiPjxzYW1sMjpBdWRpZW5jZVJlc3RyaWN0aW9uPjxzYW1sMjpBdWRpZW5jZT5odHRwOi8vbG9jYWxob3N0OjMwMDA8L3NhbWwyOkF1ZGllbmNlPjwvc2FtbDI6QXVkaWVuY2VSZXN0cmljdGlvbj48L3NhbWwyOkNvbmRpdGlvbnM+PHNhbWwyOkF1dGhuU3RhdGVtZW50IEF1dGhuSW5zdGFudD0iMjAxMy0wNS0yM1QxMTo1MjoyMS45MjlaIiBTZXNzaW9uSW5kZXg9ImlkMTM2OTMwOTk0MTkyOS4yNjc5NTA2NDkiPjxzYW1sMjpBdXRobkNvbnRleHQ+PHNhbWwyOkF1dGhuQ29udGV4dENsYXNzUmVmPnVybjpvYXNpczpuYW1lczp0YzpTQU1MOjIuMDphYzpjbGFzc2VzOlBhc3N3b3JkUHJvdGVjdGVkVHJhbnNwb3J0PC9zYW1sMjpBdXRobkNvbnRleHRDbGFzc1JlZj48L3NhbWwyOkF1dGhuQ29udGV4dD48L3NhbWwyOkF1dGhuU3RhdGVtZW50Pjwvc2FtbDI6QXNzZXJ0aW9uPjwvc2FtbDJwOlJlc3BvbnNlPg==", "RelayState"=>""}
+NAMEID: rsubramanian@cb.careerbuilder.com
+Redirected to http://localhost:3000/invoice
+Completed 302 Found in 51903ms (ActiveRecord: 0.0ms)
+Started GET "/invoice" for 127.0.0.1 at 2013-05-23 07:53:21 -0400
+Processing by InvoiceController#index as HTML
+  Rendered invoice/index.html.erb within layouts/application (6.5ms)
+Compiled cb_invoices.css  (2ms)  (pid 11877)
+Compiled invoice.css  (2ms)  (pid 11877)
+Compiled pdf.css  (2ms)  (pid 11877)
+Compiled sam.css  (2ms)  (pid 11877)
+Compiled saml.css  (2ms)  (pid 11877)
+Compiled scaffolds.css  (42ms)  (pid 11877)
+Compiled application.css  (359ms)  (pid 11877)
+Compiled application.js  (0ms)  (pid 11877)
+Completed 200 OK in 415ms (Views: 413.1ms | ActiveRecord: 0.0ms)
+Started GET "/" for 127.0.0.1 at 2013-05-23 07:56:33 -0400
+Processing by InvoiceController#index as HTML
+  Rendered invoice/index.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 11ms (Views: 10.4ms | ActiveRecord: 0.0ms)
+Started GET "/" for 127.0.0.1 at 2013-05-23 07:57:33 -0400
+Processing by InvoiceController#index as HTML
+Redirected to http://localhost:3000/saml
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+Started GET "/saml" for 127.0.0.1 at 2013-05-23 07:57:33 -0400
+Processing by SamlController#index as HTML
+Redirected to https://cbtest.okta.com/app/template_saml_2_0/k4aberjrODWHGWIYFSXI/sso/saml
+Completed 302 Found in 5ms (ActiveRecord: 0.0ms)
+Started POST "/saml/consume" for 127.0.0.1 at 2013-05-23 07:57:51 -0400
+Processing by SamlController#consume as HTML
+  Parameters: {"SAMLResponse"=>"PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz48c2FtbDJwOlJlc3BvbnNlIHhtbG5zOnNhbWwycD0idXJuOm9hc2lzOm5hbWVzOnRjOlNBTUw6Mi4wOnByb3RvY29sIiBEZXN0aW5hdGlvbj0iaHR0cDovL2xvY2FsaG9zdDozMDAwL3NhbWwvY29uc3VtZSIgSUQ9ImlkMTc4NzEwNTkxMTA3MDg4MDE0MDM1NTU0NzAiIElzc3VlSW5zdGFudD0iMjAxMy0wNS0yM1QxMTo1Nzo0My44NThaIiBWZXJzaW9uPSIyLjAiPjxzYW1sMjpJc3N1ZXIgeG1sbnM6c2FtbDI9InVybjpvYXNpczpuYW1lczp0YzpTQU1MOjIuMDphc3NlcnRpb24iIEZvcm1hdD0idXJuOm9hc2lzOm5hbWVzOnRjOlNBTUw6Mi4wOm5hbWVpZC1mb3JtYXQ6ZW50aXR5Ij5odHRwOi8vd3d3Lm9rdGEuY29tL2s0YWJlcmpyT0RXSEdXSVlGU1hJPC9zYW1sMjpJc3N1ZXI+PGRzOlNpZ25hdHVyZSB4bWxuczpkcz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC8wOS94bWxkc2lnIyI+PGRzOlNpZ25lZEluZm8+PGRzOkNhbm9uaWNhbGl6YXRpb25NZXRob2QgQWxnb3JpdGhtPSJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzEwL3htbC1leGMtYzE0biMiLz48ZHM6U2lnbmF0dXJlTWV0aG9kIEFsZ29yaXRobT0iaHR0cDovL3d3dy53My5vcmcvMjAwMC8wOS94bWxkc2lnI3JzYS1zaGExIi8+PGRzOlJlZmVyZW5jZSBVUkk9IiNpZDE3ODcxMDU5MTEwNzA4ODAxNDAzNTU1NDcwIj48ZHM6VHJhbnNmb3Jtcz48ZHM6VHJhbnNmb3JtIEFsZ29yaXRobT0iaHR0cDovL3d3dy53My5vcmcvMjAwMC8wOS94bWxkc2lnI2VudmVsb3BlZC1zaWduYXR1cmUiLz48ZHM6VHJhbnNmb3JtIEFsZ29yaXRobT0iaHR0cDovL3d3dy53My5vcmcvMjAwMS8xMC94bWwtZXhjLWMxNG4jIi8+PC9kczpUcmFuc2Zvcm1zPjxkczpEaWdlc3RNZXRob2QgQWxnb3JpdGhtPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwLzA5L3htbGRzaWcjc2hhMSIvPjxkczpEaWdlc3RWYWx1ZT4rdlJOZHk4NVZGYzhqc0Nxb2wrRU1IMnAxN3c9PC9kczpEaWdlc3RWYWx1ZT48L2RzOlJlZmVyZW5jZT48L2RzOlNpZ25lZEluZm8+PGRzOlNpZ25hdHVyZVZhbHVlPlUrTlhRLzdYTmtlK0QvUk1LOW1MUkhta1Z2Qis3Vk5RMituL3ZWMWs2dHA5TkJsa0k3Y3FJUGxmRkJlaG5WREFmQWpmcTFycm5vNC95dFdYWGZ2MFJJT2dPNGZmUXArSFNQR1hhZXBxdFBIemhCU0hQYlZrODh6YU9uamphaWtUS2tKZ21tWCszOGp0M255SVN3Y21JTjRSTFlkRmlIRGJvVFZoR1VMSzBRYz08L2RzOlNpZ25hdHVyZVZhbHVlPjxkczpLZXlJbmZvPjxkczpYNTA5RGF0YT48ZHM6WDUwOUNlcnRpZmljYXRlPk1JSUNqekNDQWZpZ0F3SUJBZ0lHQVQyMmI5NGdNQTBHQ1NxR1NJYjNEUUVCQlFVQU1JR0tNUXN3Q1FZRFZRUUdFd0pWVXpFVE1CRUcKQTFVRUNBd0tRMkZzYVdadmNtNXBZVEVXTUJRR0ExVUVCd3dOVTJGdUlFWnlZVzVqYVhOamJ6RU5NQXNHQTFVRUNnd0VUMnQwWVRFVQpNQklHQTFVRUN3d0xVMU5QVUhKdmRtbGtaWEl4Q3pBSkJnTlZCQU1NQW1OaU1Sd3dHZ1lKS29aSWh2Y05BUWtCRmcxcGJtWnZRRzlyCmRHRXVZMjl0TUI0WERURXpNRE15T1RFek5UVTFOMW9YRFRRek1ETXlPVEV6TlRZMU4xb3dnWW94Q3pBSkJnTlZCQVlUQWxWVE1STXcKRVFZRFZRUUlEQXBEWVd4cFptOXlibWxoTVJZd0ZBWURWUVFIREExVFlXNGdSbkpoYm1OcGMyTnZNUTB3Q3dZRFZRUUtEQVJQYTNSaApNUlF3RWdZRFZRUUxEQXRUVTA5UWNtOTJhV1JsY2pFTE1Ba0dBMVVFQXd3Q1kySXhIREFhQmdrcWhraUc5dzBCQ1FFV0RXbHVabTlBCmIydDBZUzVqYjIwd2daOHdEUVlKS29aSWh2Y05BUUVCQlFBRGdZMEFNSUdKQW9HQkFJR3B6by91Nks4K3ZkdzFNMCtMa0RRcnJ4VFkKb2ovRlNKOHcwLzNaNDdzTXNRVlVENXVQa2pzbEJNWUkzMHFFV2xYb3pXT3E5YnRDNS9id0ZrcHllOW5adXJvOTFuWlh6UHRFY2xDWQpVMnhYVlBsaU5PSmVMaDc3R0F5d2EvVFJBaFNvTGNiRUNGQmVzWGEzeG9wQVFUOUp6SVNQQWg2UGVLL3o2dkh3QWN6cEFnTUJBQUV3CkRRWUpLb1pJaHZjTkFRRUZCUUFEZ1lFQWdTdDJ5dVM5bEpuSVRBamhoNXF2NzkxZFpvSmZ2VEFkWlI0UDJjbTdxenZOcEY4NkpXR1QKY1hyODVCdTFuYXN3QUVrNU5WYTRHb0dPNmMycU5RUE1UZzMxQ0dxMzdkdmlDYmdkdWkxa1VpTUh3Mm5qTzZ4cDhFM3NORkNqZGZOWQowTHdKU05FNjFxbmVYaWNkYjFzQWZxd0h1WExyMVdqUk9ndVd2R3J0aGJvPTwvZHM6WDUwOUNlcnRpZmljYXRlPjwvZHM6WDUwOURhdGE+PC9kczpLZXlJbmZvPjwvZHM6U2lnbmF0dXJlPjxzYW1sMnA6U3RhdHVzIHhtbG5zOnNhbWwycD0idXJuOm9hc2lzOm5hbWVzOnRjOlNBTUw6Mi4wOnByb3RvY29sIj48c2FtbDJwOlN0YXR1c0NvZGUgVmFsdWU9InVybjpvYXNpczpuYW1lczp0YzpTQU1MOjIuMDpzdGF0dXM6U3VjY2VzcyIvPjwvc2FtbDJwOlN0YXR1cz48c2FtbDI6QXNzZXJ0aW9uIHhtbG5zOnNhbWwyPSJ1cm46b2FzaXM6bmFtZXM6dGM6U0FNTDoyLjA6YXNzZXJ0aW9uIiBJRD0iaWQxNzg3MTA1OTExMTU2MDgwMTg1OTU4NjQ0MCIgSXNzdWVJbnN0YW50PSIyMDEzLTA1LTIzVDExOjU3OjQzLjg1OFoiIFZlcnNpb249IjIuMCI+PHNhbWwyOklzc3VlciBGb3JtYXQ9InVybjpvYXNpczpuYW1lczp0YzpTQU1MOjIuMDpuYW1laWQtZm9ybWF0OmVudGl0eSI+aHR0cDovL3d3dy5va3RhLmNvbS9rNGFiZXJqck9EV0hHV0lZRlNYSTwvc2FtbDI6SXNzdWVyPjxzYW1sMjpTdWJqZWN0PjxzYW1sMjpOYW1lSUQgRm9ybWF0PSJ1cm46b2FzaXM6bmFtZXM6dGM6U0FNTDoxLjE6bmFtZWlkLWZvcm1hdDplbWFpbEFkZHJlc3MiPnJzdWJyYW1hbmlhbkBjYi5jYXJlZXJidWlsZGVyLmNvbTwvc2FtbDI6TmFtZUlEPjxzYW1sMjpTdWJqZWN0Q29uZmlybWF0aW9uIE1ldGhvZD0idXJuOm9hc2lzOm5hbWVzOnRjOlNBTUw6Mi4wOmNtOmJlYXJlciI+PHNhbWwyOlN1YmplY3RDb25maXJtYXRpb25EYXRhIE5vdE9uT3JBZnRlcj0iMjAxMy0wNS0yM1QxMjowMjo0My44NThaIiBSZWNpcGllbnQ9Imh0dHA6Ly9sb2NhbGhvc3Q6MzAwMC9zYW1sL2NvbnN1bWUvaW52b2ljZSIvPjwvc2FtbDI6U3ViamVjdENvbmZpcm1hdGlvbj48L3NhbWwyOlN1YmplY3Q+PHNhbWwyOkNvbmRpdGlvbnMgTm90QmVmb3JlPSIyMDEzLTA1LTIzVDExOjUyOjQzLjg1OFoiIE5vdE9uT3JBZnRlcj0iMjAxMy0wNS0yM1QxMjowMjo0My44NThaIj48c2FtbDI6QXVkaWVuY2VSZXN0cmljdGlvbj48c2FtbDI6QXVkaWVuY2U+aHR0cDovL2xvY2FsaG9zdDozMDAwPC9zYW1sMjpBdWRpZW5jZT48L3NhbWwyOkF1ZGllbmNlUmVzdHJpY3Rpb24+PC9zYW1sMjpDb25kaXRpb25zPjxzYW1sMjpBdXRoblN0YXRlbWVudCBBdXRobkluc3RhbnQ9IjIwMTMtMDUtMjNUMTE6NTc6NDMuODU4WiIgU2Vzc2lvbkluZGV4PSJpZDEzNjkzMTAyNjM4NTguMTMzNTkzMDA3Ij48c2FtbDI6QXV0aG5Db250ZXh0PjxzYW1sMjpBdXRobkNvbnRleHRDbGFzc1JlZj51cm46b2FzaXM6bmFtZXM6dGM6U0FNTDoyLjA6YWM6Y2xhc3NlczpQYXNzd29yZFByb3RlY3RlZFRyYW5zcG9ydDwvc2FtbDI6QXV0aG5Db250ZXh0Q2xhc3NSZWY+PC9zYW1sMjpBdXRobkNvbnRleHQ+PC9zYW1sMjpBdXRoblN0YXRlbWVudD48L3NhbWwyOkFzc2VydGlvbj48L3NhbWwycDpSZXNwb25zZT4=", "RelayState"=>""}
+NAMEID: rsubramanian@cb.careerbuilder.com
+Redirected to http://localhost:3000/invoice
+Completed 302 Found in 18173ms (ActiveRecord: 0.0ms)
+Started GET "/invoice" for 127.0.0.1 at 2013-05-23 07:58:09 -0400
+Processing by InvoiceController#index as HTML
+  Rendered invoice/index.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 10ms (Views: 9.4ms | ActiveRecord: 0.0ms)
+Connecting to database specified by database.yml
+Started GET "/" for 127.0.0.1 at 2013-05-23 08:00:39 -0400
+Processing by InvoiceController#index as HTML
+Redirected to http://localhost:3000/saml
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+Started GET "/saml" for 127.0.0.1 at 2013-05-23 08:00:39 -0400
+Processing by SamlController#index as HTML
+Redirected to https://cbtest.okta.com/app/template_saml_2_0/k4aberjrODWHGWIYFSXI/sso/saml
+Completed 302 Found in 8ms (ActiveRecord: 0.0ms)
+Started POST "/saml/consume" for 127.0.0.1 at 2013-05-23 08:00:57 -0400
+Processing by SamlController#consume as HTML
+  Parameters: {"SAMLResponse"=>"PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz48c2FtbDJwOlJlc3BvbnNlIHhtbG5zOnNhbWwycD0idXJuOm9hc2lzOm5hbWVzOnRjOlNBTUw6Mi4wOnByb3RvY29sIiBEZXN0aW5hdGlvbj0iaHR0cDovL2xvY2FsaG9zdDozMDAwL3NhbWwvY29uc3VtZSIgSUQ9ImlkMTk2MTI1MDY0NjI4NTMwOTIxMTg0NDQzNDUiIElzc3VlSW5zdGFudD0iMjAxMy0wNS0yM1QxMjowMDo0OS43NzhaIiBWZXJzaW9uPSIyLjAiPjxzYW1sMjpJc3N1ZXIgeG1sbnM6c2FtbDI9InVybjpvYXNpczpuYW1lczp0YzpTQU1MOjIuMDphc3NlcnRpb24iIEZvcm1hdD0idXJuOm9hc2lzOm5hbWVzOnRjOlNBTUw6Mi4wOm5hbWVpZC1mb3JtYXQ6ZW50aXR5Ij5odHRwOi8vd3d3Lm9rdGEuY29tL2s0YWJlcmpyT0RXSEdXSVlGU1hJPC9zYW1sMjpJc3N1ZXI+PGRzOlNpZ25hdHVyZSB4bWxuczpkcz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC8wOS94bWxkc2lnIyI+PGRzOlNpZ25lZEluZm8+PGRzOkNhbm9uaWNhbGl6YXRpb25NZXRob2QgQWxnb3JpdGhtPSJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzEwL3htbC1leGMtYzE0biMiLz48ZHM6U2lnbmF0dXJlTWV0aG9kIEFsZ29yaXRobT0iaHR0cDovL3d3dy53My5vcmcvMjAwMC8wOS94bWxkc2lnI3JzYS1zaGExIi8+PGRzOlJlZmVyZW5jZSBVUkk9IiNpZDE5NjEyNTA2NDYyODUzMDkyMTE4NDQ0MzQ1Ij48ZHM6VHJhbnNmb3Jtcz48ZHM6VHJhbnNmb3JtIEFsZ29yaXRobT0iaHR0cDovL3d3dy53My5vcmcvMjAwMC8wOS94bWxkc2lnI2VudmVsb3BlZC1zaWduYXR1cmUiLz48ZHM6VHJhbnNmb3JtIEFsZ29yaXRobT0iaHR0cDovL3d3dy53My5vcmcvMjAwMS8xMC94bWwtZXhjLWMxNG4jIi8+PC9kczpUcmFuc2Zvcm1zPjxkczpEaWdlc3RNZXRob2QgQWxnb3JpdGhtPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwLzA5L3htbGRzaWcjc2hhMSIvPjxkczpEaWdlc3RWYWx1ZT5nTnB2RXpCZDBDUjJGbU1VMFNGdWNCalVCQ3M9PC9kczpEaWdlc3RWYWx1ZT48L2RzOlJlZmVyZW5jZT48L2RzOlNpZ25lZEluZm8+PGRzOlNpZ25hdHVyZVZhbHVlPmNkWFFOUmZkd1c0aDgvNlVXSGNGOVdjelFmTGtEbmx1R1JzeUFoZnFlSzBUL3orWFhYeFVTTjNSVkcrNWlZNDVOWWVNWDQwSVk4WStBd3B6bVk0Rmk3MmMxbFNsTlhDb2hUbWNMRmpxUUZnZU5oMGxFcjN1UHBUZnVPdFREdGpVSXBpTW50UThMZ2NVV0dWSXdRSjc2WmdUMnhDZ1JPN1Z5WlRRcUthSy9yWT08L2RzOlNpZ25hdHVyZVZhbHVlPjxkczpLZXlJbmZvPjxkczpYNTA5RGF0YT48ZHM6WDUwOUNlcnRpZmljYXRlPk1JSUNqekNDQWZpZ0F3SUJBZ0lHQVQyMmI5NGdNQTBHQ1NxR1NJYjNEUUVCQlFVQU1JR0tNUXN3Q1FZRFZRUUdFd0pWVXpFVE1CRUcKQTFVRUNBd0tRMkZzYVdadmNtNXBZVEVXTUJRR0ExVUVCd3dOVTJGdUlFWnlZVzVqYVhOamJ6RU5NQXNHQTFVRUNnd0VUMnQwWVRFVQpNQklHQTFVRUN3d0xVMU5QVUhKdmRtbGtaWEl4Q3pBSkJnTlZCQU1NQW1OaU1Sd3dHZ1lKS29aSWh2Y05BUWtCRmcxcGJtWnZRRzlyCmRHRXVZMjl0TUI0WERURXpNRE15T1RFek5UVTFOMW9YRFRRek1ETXlPVEV6TlRZMU4xb3dnWW94Q3pBSkJnTlZCQVlUQWxWVE1STXcKRVFZRFZRUUlEQXBEWVd4cFptOXlibWxoTVJZd0ZBWURWUVFIREExVFlXNGdSbkpoYm1OcGMyTnZNUTB3Q3dZRFZRUUtEQVJQYTNSaApNUlF3RWdZRFZRUUxEQXRUVTA5UWNtOTJhV1JsY2pFTE1Ba0dBMVVFQXd3Q1kySXhIREFhQmdrcWhraUc5dzBCQ1FFV0RXbHVabTlBCmIydDBZUzVqYjIwd2daOHdEUVlKS29aSWh2Y05BUUVCQlFBRGdZMEFNSUdKQW9HQkFJR3B6by91Nks4K3ZkdzFNMCtMa0RRcnJ4VFkKb2ovRlNKOHcwLzNaNDdzTXNRVlVENXVQa2pzbEJNWUkzMHFFV2xYb3pXT3E5YnRDNS9id0ZrcHllOW5adXJvOTFuWlh6UHRFY2xDWQpVMnhYVlBsaU5PSmVMaDc3R0F5d2EvVFJBaFNvTGNiRUNGQmVzWGEzeG9wQVFUOUp6SVNQQWg2UGVLL3o2dkh3QWN6cEFnTUJBQUV3CkRRWUpLb1pJaHZjTkFRRUZCUUFEZ1lFQWdTdDJ5dVM5bEpuSVRBamhoNXF2NzkxZFpvSmZ2VEFkWlI0UDJjbTdxenZOcEY4NkpXR1QKY1hyODVCdTFuYXN3QUVrNU5WYTRHb0dPNmMycU5RUE1UZzMxQ0dxMzdkdmlDYmdkdWkxa1VpTUh3Mm5qTzZ4cDhFM3NORkNqZGZOWQowTHdKU05FNjFxbmVYaWNkYjFzQWZxd0h1WExyMVdqUk9ndVd2R3J0aGJvPTwvZHM6WDUwOUNlcnRpZmljYXRlPjwvZHM6WDUwOURhdGE+PC9kczpLZXlJbmZvPjwvZHM6U2lnbmF0dXJlPjxzYW1sMnA6U3RhdHVzIHhtbG5zOnNhbWwycD0idXJuOm9hc2lzOm5hbWVzOnRjOlNBTUw6Mi4wOnByb3RvY29sIj48c2FtbDJwOlN0YXR1c0NvZGUgVmFsdWU9InVybjpvYXNpczpuYW1lczp0YzpTQU1MOjIuMDpzdGF0dXM6U3VjY2VzcyIvPjwvc2FtbDJwOlN0YXR1cz48c2FtbDI6QXNzZXJ0aW9uIHhtbG5zOnNhbWwyPSJ1cm46b2FzaXM6bmFtZXM6dGM6U0FNTDoyLjA6YXNzZXJ0aW9uIiBJRD0iaWQxOTYxMjUwNjQ2MzY0NTEzMTM0MDc1NjM5NSIgSXNzdWVJbnN0YW50PSIyMDEzLTA1LTIzVDEyOjAwOjQ5Ljc3OFoiIFZlcnNpb249IjIuMCI+PHNhbWwyOklzc3VlciBGb3JtYXQ9InVybjpvYXNpczpuYW1lczp0YzpTQU1MOjIuMDpuYW1laWQtZm9ybWF0OmVudGl0eSI+aHR0cDovL3d3dy5va3RhLmNvbS9rNGFiZXJqck9EV0hHV0lZRlNYSTwvc2FtbDI6SXNzdWVyPjxzYW1sMjpTdWJqZWN0PjxzYW1sMjpOYW1lSUQgRm9ybWF0PSJ1cm46b2FzaXM6bmFtZXM6dGM6U0FNTDoxLjE6bmFtZWlkLWZvcm1hdDplbWFpbEFkZHJlc3MiPnJzdWJyYW1hbmlhbkBjYi5jYXJlZXJidWlsZGVyLmNvbTwvc2FtbDI6TmFtZUlEPjxzYW1sMjpTdWJqZWN0Q29uZmlybWF0aW9uIE1ldGhvZD0idXJuOm9hc2lzOm5hbWVzOnRjOlNBTUw6Mi4wOmNtOmJlYXJlciI+PHNhbWwyOlN1YmplY3RDb25maXJtYXRpb25EYXRhIE5vdE9uT3JBZnRlcj0iMjAxMy0wNS0yM1QxMjowNTo0OS43NzhaIiBSZWNpcGllbnQ9Imh0dHA6Ly9sb2NhbGhvc3Q6MzAwMC9zYW1sL2NvbnN1bWUvaW52b2ljZSIvPjwvc2FtbDI6U3ViamVjdENvbmZpcm1hdGlvbj48L3NhbWwyOlN1YmplY3Q+PHNhbWwyOkNvbmRpdGlvbnMgTm90QmVmb3JlPSIyMDEzLTA1LTIzVDExOjU1OjQ5Ljc3OFoiIE5vdE9uT3JBZnRlcj0iMjAxMy0wNS0yM1QxMjowNTo0OS43NzhaIj48c2FtbDI6QXVkaWVuY2VSZXN0cmljdGlvbj48c2FtbDI6QXVkaWVuY2U+aHR0cDovL2xvY2FsaG9zdDozMDAwPC9zYW1sMjpBdWRpZW5jZT48L3NhbWwyOkF1ZGllbmNlUmVzdHJpY3Rpb24+PC9zYW1sMjpDb25kaXRpb25zPjxzYW1sMjpBdXRoblN0YXRlbWVudCBBdXRobkluc3RhbnQ9IjIwMTMtMDUtMjNUMTI6MDA6NDkuNzc4WiIgU2Vzc2lvbkluZGV4PSJpZDEzNjkzMTA0NDk3NzguMTA0MDEwMDU4MiI+PHNhbWwyOkF1dGhuQ29udGV4dD48c2FtbDI6QXV0aG5Db250ZXh0Q2xhc3NSZWY+dXJuOm9hc2lzOm5hbWVzOnRjOlNBTUw6Mi4wOmFjOmNsYXNzZXM6UGFzc3dvcmRQcm90ZWN0ZWRUcmFuc3BvcnQ8L3NhbWwyOkF1dGhuQ29udGV4dENsYXNzUmVmPjwvc2FtbDI6QXV0aG5Db250ZXh0Pjwvc2FtbDI6QXV0aG5TdGF0ZW1lbnQ+PC9zYW1sMjpBc3NlcnRpb24+PC9zYW1sMnA6UmVzcG9uc2U+", "RelayState"=>""}
+NAMEID: rsubramanian@cb.careerbuilder.com
+Redirected to http://localhost:3000/invoice
+Completed 302 Found in 97868130ms (ActiveRecord: 0.0ms)
+Connecting to database specified by database.yml
+Started GET "/" for 127.0.0.1 at 2013-05-24 11:12:39 -0400
+Processing by InvoiceController#index as HTML
+Redirected to http://localhost:3000/saml
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+Started GET "/saml" for 127.0.0.1 at 2013-05-24 11:12:39 -0400
+Processing by SamlController#index as HTML
+Redirected to https://cbtest.okta.com/app/template_saml_2_0/k4aberjrODWHGWIYFSXI/sso/saml
+Completed 302 Found in 8ms (ActiveRecord: 0.0ms)
+Started POST "/saml/consume" for 127.0.0.1 at 2013-05-24 11:12:57 -0400
+Processing by SamlController#consume as HTML
+  Parameters: {"SAMLResponse"=>"PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz48c2FtbDJwOlJlc3BvbnNlIHhtbG5zOnNhbWwycD0idXJuOm9hc2lzOm5hbWVzOnRjOlNBTUw6Mi4wOnByb3RvY29sIiBEZXN0aW5hdGlvbj0iaHR0cDovL2xvY2FsaG9zdDozMDAwL3NhbWwvY29uc3VtZSIgSUQ9ImlkMjA1OTE3Mjg0ODY0NjI4OTc5MDgwMjQ1MSIgSXNzdWVJbnN0YW50PSIyMDEzLTA1LTI0VDE1OjEyOjUxLjk4MFoiIFZlcnNpb249IjIuMCI+PHNhbWwyOklzc3VlciB4bWxuczpzYW1sMj0idXJuOm9hc2lzOm5hbWVzOnRjOlNBTUw6Mi4wOmFzc2VydGlvbiIgRm9ybWF0PSJ1cm46b2FzaXM6bmFtZXM6dGM6U0FNTDoyLjA6bmFtZWlkLWZvcm1hdDplbnRpdHkiPmh0dHA6Ly93d3cub2t0YS5jb20vazRhYmVyanJPRFdIR1dJWUZTWEk8L3NhbWwyOklzc3Vlcj48ZHM6U2lnbmF0dXJlIHhtbG5zOmRzPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwLzA5L3htbGRzaWcjIj48ZHM6U2lnbmVkSW5mbz48ZHM6Q2Fub25pY2FsaXphdGlvbk1ldGhvZCBBbGdvcml0aG09Imh0dHA6Ly93d3cudzMub3JnLzIwMDEvMTAveG1sLWV4Yy1jMTRuIyIvPjxkczpTaWduYXR1cmVNZXRob2QgQWxnb3JpdGhtPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwLzA5L3htbGRzaWcjcnNhLXNoYTEiLz48ZHM6UmVmZXJlbmNlIFVSST0iI2lkMjA1OTE3Mjg0ODY0NjI4OTc5MDgwMjQ1MSI+PGRzOlRyYW5zZm9ybXM+PGRzOlRyYW5zZm9ybSBBbGdvcml0aG09Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvMDkveG1sZHNpZyNlbnZlbG9wZWQtc2lnbmF0dXJlIi8+PGRzOlRyYW5zZm9ybSBBbGdvcml0aG09Imh0dHA6Ly93d3cudzMub3JnLzIwMDEvMTAveG1sLWV4Yy1jMTRuIyIvPjwvZHM6VHJhbnNmb3Jtcz48ZHM6RGlnZXN0TWV0aG9kIEFsZ29yaXRobT0iaHR0cDovL3d3dy53My5vcmcvMjAwMC8wOS94bWxkc2lnI3NoYTEiLz48ZHM6RGlnZXN0VmFsdWU+QmZTT2xZWE1QQ1RpZVVScFpPNGIyNG5RMkVzPTwvZHM6RGlnZXN0VmFsdWU+PC9kczpSZWZlcmVuY2U+PC9kczpTaWduZWRJbmZvPjxkczpTaWduYXR1cmVWYWx1ZT5FY0VvUm5maVMzaDJ4RXRUeGlnRlVadmhLdWZxTTlTZUdFOTRJZGRqTjQxTlJ2UElHMFFsbFhQbU9nWWpDU0hGQ3VnRWxoc3dTUjM3TVAzVitRRjBBbVFJNUVwZ1U5R0hyOTQzMkV0RE94WXRSZzMyQVJvRFo5bU9uQWY1dWZqQ1VyV1E1SkpxODZxOWZGSStOc293eEU1Z3BCeThDVlFONDJjaG5MOUxObVU9PC9kczpTaWduYXR1cmVWYWx1ZT48ZHM6S2V5SW5mbz48ZHM6WDUwOURhdGE+PGRzOlg1MDlDZXJ0aWZpY2F0ZT5NSUlDanpDQ0FmaWdBd0lCQWdJR0FUMjJiOTRnTUEwR0NTcUdTSWIzRFFFQkJRVUFNSUdLTVFzd0NRWURWUVFHRXdKVlV6RVRNQkVHCkExVUVDQXdLUTJGc2FXWnZjbTVwWVRFV01CUUdBMVVFQnd3TlUyRnVJRVp5WVc1amFYTmpiekVOTUFzR0ExVUVDZ3dFVDJ0MFlURVUKTUJJR0ExVUVDd3dMVTFOUFVISnZkbWxrWlhJeEN6QUpCZ05WQkFNTUFtTmlNUnd3R2dZSktvWklodmNOQVFrQkZnMXBibVp2UUc5cgpkR0V1WTI5dE1CNFhEVEV6TURNeU9URXpOVFUxTjFvWERUUXpNRE15T1RFek5UWTFOMW93Z1lveEN6QUpCZ05WQkFZVEFsVlRNUk13CkVRWURWUVFJREFwRFlXeHBabTl5Ym1saE1SWXdGQVlEVlFRSERBMVRZVzRnUm5KaGJtTnBjMk52TVEwd0N3WURWUVFLREFSUGEzUmgKTVJRd0VnWURWUVFMREF0VFUwOVFjbTkyYVdSbGNqRUxNQWtHQTFVRUF3d0NZMkl4SERBYUJna3Foa2lHOXcwQkNRRVdEV2x1Wm05QQpiMnQwWVM1amIyMHdnWjh3RFFZSktvWklodmNOQVFFQkJRQURnWTBBTUlHSkFvR0JBSUdwem8vdTZLOCt2ZHcxTTArTGtEUXJyeFRZCm9qL0ZTSjh3MC8zWjQ3c01zUVZVRDV1UGtqc2xCTVlJMzBxRVdsWG96V09xOWJ0QzUvYndGa3B5ZTluWnVybzkxblpYelB0RWNsQ1kKVTJ4WFZQbGlOT0plTGg3N0dBeXdhL1RSQWhTb0xjYkVDRkJlc1hhM3hvcEFRVDlKeklTUEFoNlBlSy96NnZId0FjenBBZ01CQUFFdwpEUVlKS29aSWh2Y05BUUVGQlFBRGdZRUFnU3QyeXVTOWxKbklUQWpoaDVxdjc5MWRab0pmdlRBZFpSNFAyY203cXp2TnBGODZKV0dUCmNYcjg1QnUxbmFzd0FFazVOVmE0R29HTzZjMnFOUVBNVGczMUNHcTM3ZHZpQ2JnZHVpMWtVaU1IdzJuak82eHA4RTNzTkZDamRmTlkKMEx3SlNORTYxcW5lWGljZGIxc0FmcXdIdVhMcjFXalJPZ3VXdkdydGhibz08L2RzOlg1MDlDZXJ0aWZpY2F0ZT48L2RzOlg1MDlEYXRhPjwvZHM6S2V5SW5mbz48L2RzOlNpZ25hdHVyZT48c2FtbDJwOlN0YXR1cyB4bWxuczpzYW1sMnA9InVybjpvYXNpczpuYW1lczp0YzpTQU1MOjIuMDpwcm90b2NvbCI+PHNhbWwycDpTdGF0dXNDb2RlIFZhbHVlPSJ1cm46b2FzaXM6bmFtZXM6dGM6U0FNTDoyLjA6c3RhdHVzOlN1Y2Nlc3MiLz48L3NhbWwycDpTdGF0dXM+PHNhbWwyOkFzc2VydGlvbiB4bWxuczpzYW1sMj0idXJuOm9hc2lzOm5hbWVzOnRjOlNBTUw6Mi4wOmFzc2VydGlvbiIgSUQ9ImlkMjA1OTE3Mjg0ODcyODkxMzY3MDc5NzMyNCIgSXNzdWVJbnN0YW50PSIyMDEzLTA1LTI0VDE1OjEyOjUxLjk4MFoiIFZlcnNpb249IjIuMCI+PHNhbWwyOklzc3VlciBGb3JtYXQ9InVybjpvYXNpczpuYW1lczp0YzpTQU1MOjIuMDpuYW1laWQtZm9ybWF0OmVudGl0eSI+aHR0cDovL3d3dy5va3RhLmNvbS9rNGFiZXJqck9EV0hHV0lZRlNYSTwvc2FtbDI6SXNzdWVyPjxzYW1sMjpTdWJqZWN0PjxzYW1sMjpOYW1lSUQgRm9ybWF0PSJ1cm46b2FzaXM6bmFtZXM6dGM6U0FNTDoxLjE6bmFtZWlkLWZvcm1hdDplbWFpbEFkZHJlc3MiPnJzdWJyYW1hbmlhbjwvc2FtbDI6TmFtZUlEPjxzYW1sMjpTdWJqZWN0Q29uZmlybWF0aW9uIE1ldGhvZD0idXJuOm9hc2lzOm5hbWVzOnRjOlNBTUw6Mi4wOmNtOmJlYXJlciI+PHNhbWwyOlN1YmplY3RDb25maXJtYXRpb25EYXRhIE5vdE9uT3JBZnRlcj0iMjAxMy0wNS0yNFQxNToxNzo1MS45ODFaIiBSZWNpcGllbnQ9Imh0dHA6Ly9sb2NhbGhvc3Q6MzAwMC9zYW1sL2NvbnN1bWUvaW52b2ljZSIvPjwvc2FtbDI6U3ViamVjdENvbmZpcm1hdGlvbj48L3NhbWwyOlN1YmplY3Q+PHNhbWwyOkNvbmRpdGlvbnMgTm90QmVmb3JlPSIyMDEzLTA1LTI0VDE1OjA3OjUxLjk4MVoiIE5vdE9uT3JBZnRlcj0iMjAxMy0wNS0yNFQxNToxNzo1MS45ODFaIj48c2FtbDI6QXVkaWVuY2VSZXN0cmljdGlvbj48c2FtbDI6QXVkaWVuY2U+aHR0cDovL2xvY2FsaG9zdDozMDAwPC9zYW1sMjpBdWRpZW5jZT48L3NhbWwyOkF1ZGllbmNlUmVzdHJpY3Rpb24+PC9zYW1sMjpDb25kaXRpb25zPjxzYW1sMjpBdXRoblN0YXRlbWVudCBBdXRobkluc3RhbnQ9IjIwMTMtMDUtMjRUMTU6MTI6NTEuOTgwWiIgU2Vzc2lvbkluZGV4PSJpZDEzNjk0MDgzNzE5ODAuMTE5MDc5NTU5MSI+PHNhbWwyOkF1dGhuQ29udGV4dD48c2FtbDI6QXV0aG5Db250ZXh0Q2xhc3NSZWY+dXJuOm9hc2lzOm5hbWVzOnRjOlNBTUw6Mi4wOmFjOmNsYXNzZXM6UGFzc3dvcmRQcm90ZWN0ZWRUcmFuc3BvcnQ8L3NhbWwyOkF1dGhuQ29udGV4dENsYXNzUmVmPjwvc2FtbDI6QXV0aG5Db250ZXh0Pjwvc2FtbDI6QXV0aG5TdGF0ZW1lbnQ+PC9zYW1sMjpBc3NlcnRpb24+PC9zYW1sMnA6UmVzcG9uc2U+", "RelayState"=>""}
+NAMEID: rsubramanian
+Redirected to http://localhost:3000/invoice
+Completed 302 Found in 1120396ms (ActiveRecord: 0.0ms)
+Started GET "/invoice" for 127.0.0.1 at 2013-05-24 11:31:37 -0400
+Processing by InvoiceController#index as HTML
+  Rendered invoice/index.html.erb within layouts/application (6.8ms)
+Completed 200 OK in 51ms (Views: 50.1ms | ActiveRecord: 0.0ms)
